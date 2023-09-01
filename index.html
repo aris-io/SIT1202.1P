@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2.1P Part 2
+</title>
+</head>
+<body>
+<script>
+
+  const message = "Hello, my name is Aris";
+  console.log("Length:", message.length);
+  console.log("Uppercase:", message.toUpperCase());
+  console.log("Lowercase:", message.toLowerCase());
+  console.log("Substring:", message.substring(7, 16));
+  console.log("Index of 'JavaScript':", message.indexOf("JavaScript"));
+
+
+  const decimalNumber = 3.14159265;
+  console.log("To Fixed (2 decimals):", decimalNumber.toFixed(2));
+  console.log("Exponential Notation:", decimalNumber.toExponential(4));
+  console.log("Absolute Value:", Math.abs(decimalNumber));
+  console.log("Rounded Value:", Math.round(decimalNumber));
+  console.log("Square Root:", Math.sqrt(decimalNumber));
+
+
+  const mixedArray = [1, "two", 3, 4, 5, "six"];
+  console.log("Length:", mixedArray.length);
+  console.log("Join as String:", mixedArray.join(" - "));
+  console.log("Last Element:", mixedArray[mixedArray.length - 1]);
+  console.log("Index of 'Six':", mixedArray.indexOf("six"));
+  console.log("Filter Numbers:", mixedArray.filter(item => typeof item === 'number'));
+
+  
+  const currentDate = new Date();
+  console.log("Current Date:", currentDate.toDateString());
+  console.log("Current Time:", currentDate.toTimeString());
+  console.log("UTC Date:", currentDate.toUTCString());
+  console.log("Day of the week:", currentDate.getDay());
+  console.log("Current Year:", currentDate.getFullYear());
+
+  const greet = function(name) 
+  {
+    console.log("Welcome, " + name + " :)");
+  };
+  
+  const multiply = function(x, y) 
+  {
+    return x * y;
+  };
+
+  greet("Aris");
+  console.log("Product:", multiply(44, 7));
+</script>
+</body>
+</html>
